@@ -1,12 +1,22 @@
 # define s3 remote backend
 
-terraform {
+/*terraform {
   backend "s3" {
     bucket = "threetierremotebackend"
     dynamodb_table = "remotebackend_statelock_dynamodb"
     key = "threetierremotebackend/terraform.tfstate"
     encrypt = true
     region = "us-east-1"
+  }
+}*/
+
+terraform {
+  cloud {
+    organization = "CloudAravind"
+
+    workspaces {
+      name = "AWSTerraform_ThreeTierArch"
+    }
   }
 }
 

@@ -43,7 +43,7 @@ db_engine_version = "8.0"
 db_instance_class = "db.t3.micro"
 
 # three tier mysql db identifier
-db_identifier = "ThreeTierDB"
+db_identifier = "threetierdb"
 
 # access ip for bastion instance
 access_ip = "0.0.0.0/0"
