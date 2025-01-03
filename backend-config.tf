@@ -4,7 +4,7 @@
 
 # create an s3 bucket for remote backend
 
-resource "aws_s3_bucket" "threetierremotebackend" {
+/*resource "aws_s3_bucket" "threetierremotebackend" {
   bucket = "threetierremotebackend"
 }
 
@@ -106,6 +106,6 @@ resource "aws_iam_policy" "terraform_dynamodb_state_lock_policy" {
       }
     ]
   })
-}
+}*/
 
 
