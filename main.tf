@@ -20,17 +20,6 @@ terraform {
   }
 }
 
-
-terraform {
-  cloud {
-    organization = "CloudAravind"
-
-    workspaces {
-      name = "AWSTerraform_ThreeTierArch"
-    }
-  }
-}
-
 module "networking" {
  source = "./modules/networking"
  three_tier_vpc_cidr = var.three_tier_vpc_cidr
